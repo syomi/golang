@@ -106,7 +106,7 @@ func UploadHandler(w http.ResponseWriter, req *http.Request) {
 
 }
 
-//下载方法
+//下载方法  该方法有待完善文件检查功能
 func DownLoadHandler(w http.ResponseWriter, req *http.Request) {
 	req.ParseForm()
 	if len(req.Form) > 0 {
